@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        html,body{
+  box-sizing:border-box;
+  margin:0;
+  padding:20px;
+  height:100%;
+  background:#fadaa7;
+}
+.coupon{
+  display:inline-block;
+  overflow:hidden;
+  border-radius:10px;
+}
+.coupon-left{
+  float:left;
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.coupon-left::before{
+  content: '';
+  position: absolute;
+  top: -210px;
+  display: block;
+  right: -210px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 200px solid #252525;
+  clip: rect(0,210px,285px,0);
+    background: red;
+
+}
+.coupon-left::after{
+  content: '';
+  position: absolute;
+  bottom: -210px;
+  display: block;
+  right: -210px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 200px solid #252525;
+  clip: rect(135px,210px,285px,0);
+  background: red;
+
+}
+.coupon-con{
+  float:left;
+  width:350px;
+  height:150px;
+  position:relative;
+  background: red;
+}
+.coupon-con::before{
+  content: '';
+  position: absolute;
+  top: -410px;
+  display: block;
+  left: -410px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 400px solid #fff;
+  clip: rect(0,800px,485px,410px);
+  background: red;
+
+}
+.coupon-con::after{
+  content: '';
+  position: absolute;
+  bottom: -410px;
+  display: block;
+  left: -410px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 400px solid #fff;
+  clip: rect(335px,800px,485px,410px);
+  background: red;
+}
+
+
+ 
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="coupon">
+        <div class="coupon-left"></div>
+        <div class="coupon-con"></div>
+      </div>
+</body>
+</html>
