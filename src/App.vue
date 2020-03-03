@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/study">Study</router-link> |
       <router-link to="/ceshi1">Ceshi1</router-link> |
+      <router-link to="/message">Message</router-link> |
 
     </div>
     <router-view/>
